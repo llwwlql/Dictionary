@@ -1,0 +1,152 @@
+.container{
+	width: 100%;
+	/*background-color: aquamarine*/
+}
+.baner{
+	width: 100%;
+	height: 55px;
+	background-color: aliceblue;
+}
+.baner div{
+	float: left;
+}
+
+.logo{
+	margin-left: 20px;
+	width: 160px;
+	height: 70px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+.logo img{
+	margin-top: 5px;
+}
+.font{
+	width: 500px;
+	height: 80px;
+	/*background-color: chartreuse;*/
+	font-size: x-large;
+}
+.font p{
+	margin-top: 15px;
+	margin-left: 30px;
+	font-family: "agency fb";
+}
+.menu{
+	width: 533px;
+	height: 80px;
+	/*background-color: antiquewhite;*/
+}
+.menu ul{
+	float: left;
+	list-style: none;
+	margin-top: 5px;
+}
+.menu ul li{
+	margin: 13px 9px 10px 12px;
+	float: left;
+}
+.menu ul li a{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.main{
+	width: 100%;
+	height: 700px;
+	background-color: coral;
+}
+.main img{
+	position: relative;
+	top: -25px;
+	left: 0px;
+	width: 1333px;
+	height: 700px;
+}
+
+.login{
+	width: 370px;
+	height: 470px;
+	background-color: #eee;
+	position: absolute;
+	top: 140px;
+	left: 850px;
+	border-radius: 10px;
+}
+
+.head{
+	width: 100%;
+	height: 60px;
+	background-color:#ccc;
+}
+/*
+ *邮箱登录与二维码处
+ */
+
+.head ul li{
+	float: left;
+	list-style: none;
+	margin-top: 16px;
+	margin-left: 13px;
+	margin-right: 10px;
+	padding: 0 0 0 10px;
+}
+
+
+.head ul li a{
+	font-family: "黑体";
+	font-size: 23px;
+	color: #333;
+	text-decoration: none;
+}
+
+
+/*
+ * 登录处
+ */
+.bottom {
+    width: 300px;
+    height: 280px;
+    margin-left: 39px;
+}
+
+.block{
+	width: 100%;
+	height: 60px;
+}
+.border{
+	width: 180px;
+	height: 15px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px;
+}
+.submit{
+	width: 100%;
+	height: 40px;
+}
+.submit input{
+	width: 30px;
+}
+.pos-sub{
+	margin-left: 2s0px;
+	margin-right: 20px ;
+}
+.sub{
+	margin-left: 25px;
+	width: 100px;
+	height: 40px;
+	border-radius: 15px;
+	font-size: 20px;
+	font-family: "黑体";
+}
+input[type=submit]{
+	background-color:  #2222ff;	
+	color: #EEEEEE;
+}
+.foot{
+	width: 100%;
+	height: 25px;
+	background-color: #F0F8FF;
+	font-size: 10px;
+}

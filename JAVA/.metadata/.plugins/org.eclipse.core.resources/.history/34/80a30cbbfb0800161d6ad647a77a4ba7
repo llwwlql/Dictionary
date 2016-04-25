@@ -1,0 +1,17 @@
+package PirrarTest;
+
+public class PirrarTest {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根		
+		Geometry c=new Circle();
+		Geometry t=new Triangle();
+		Geometry r=new Rectangle();
+		Pirrar p=new Pirrar();
+		p.height=10;
+		System.out.println(p.getVolume(c));
+		System.out.println(p.getVolume(t));
+		System.out.println(p.getVolume(r));
+	}
+
+}

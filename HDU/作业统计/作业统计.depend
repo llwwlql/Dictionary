@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1460777876 source:e:\代码集\hdu\作业统计\main.cpp
+	"Student.h"
+	"S_Number.h"
+	<stdio.h>
+	<stdlib.h>
+
+1460721659 source:e:\代码集\hdu\作业统计\src\student.cpp
+	"Student.h"
+
+1460721647 e:\代码集\hdu\作业统计\include\student.h
+	<iostream>
+	<string.h>
+
+1460726292 source:e:\代码集\hdu\作业统计\src\s_number.cpp
+	"S_Number.h"
+
+1460726269 e:\代码集\hdu\作业统计\include\s_number.h
+	<iostream>
+

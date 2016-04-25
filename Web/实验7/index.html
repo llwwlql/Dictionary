@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<script type="text/javascript">
+		/*function check(score){
+			document.write("分数为："+score+" ");
+			if(score >= 85)
+				document.writeln("优秀！<br>");
+			else{
+				if(score >= 60)
+					document.writeln("及格！<br>");
+				else
+					document.writeln("不及格！<br>");
+			}
+		}
+	
+		var score;
+		score=prompt(" 请输入你的分数：");
+		check(score);
+		*/
+		
+		function sum()
+		{
+			var i,Sum=0;
+			for(i=1;i<=100;i++)
+				Sum=Sum+i;
+			document.writeln("1+2+3+…+100 的累计和为:" + Sum +"<br>");
+		}
+		
+		function multiplicationtable()
+		{
+			var i,j;
+			
+			for(i=1;i<=9;i++)
+			{
+				for(j=1;j<=i;j++)
+				{
+					document.write(j + " * " + i +" = " + i*j +"&nbsp&nbsp&nbsp");
+				}
+				document.write("<br>");
+			}
+			
+		}
+		
+		sum();
+		
+		multiplicationtable();
+		
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,5 @@
+package Compute_earnings;
+
+abstrast public class Employee {
+
+}

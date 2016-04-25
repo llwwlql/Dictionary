@@ -1,0 +1,21 @@
+/* CSS Document */
+
+<style>
+
+.titleTable{
+font-size:36px;
+text-align:center;
+}
+.head{
+font-size:36px;
+text-align:center;
+color:#FF0000;
+}
+
+.rpf{
+font-size:16px;
+color:#FF0000;
+background-color:#0000FF;
+border:#FF0000;}
+
+</style>
