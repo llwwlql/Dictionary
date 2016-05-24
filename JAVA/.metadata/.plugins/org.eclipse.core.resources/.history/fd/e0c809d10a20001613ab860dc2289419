@@ -1,0 +1,20 @@
+package cn.edu.ex.ch9.test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+public class MethodTest {
+
+	public static void main(String[] args)throws Exception {
+		// TODO Auto-generated method stub
+		Class cls = students.class;
+		Constructor cons = cls.getDeclaredConstructor(new Class[]{String.class,int.class,char.class});
+		
+		cons.setAccessible(true);
+		Object obj = cons.newInstance(new Object[]{"ÀîËÄ",19,'f'});
+		System.out.println(obj);
+		Method method = cls.getMethod("study", null);
+		method.invoke(obj, null);
+	}
+
+}

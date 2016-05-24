@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/new_file.css" />
+		<script src="js/new_file.js"></script>
+		<title>利率计算器</title>
+	</head>
+	<body>
+		<div class="continer">
+			<h2>个人存款计算器</h2>
+			<form>
+				币种：
+				<select name="money-style">
+					<option value="RMB" selected="selected">人民币</option>
+					<option value="dollor">美元</option>
+					<option value="euro" >欧元</option>
+					<option value="yen">日元</option>
+				</select>
+				
+				<br />
+				存款种类：
+				<select name="Deposit-type">
+					<option value="select" selected="selected">选择存款种类</option>
+					<option value="huoqi">活期</option>
+					<option value="dinghuo" >定活两便</option>
+					<option value="cunben">存本取息</option>
+					<option value="zhengcun">整存整取</option>
+					<option value="lingcun" >零存整取</option>
+					<option value="tingzhi">通知存款</option>
+				</select>
+				<br />
+				存款金额：
+				<input type="text" name="amount" id="amount"/>元
+				<br />
+				期限种类：
+				<select name="term-type" id="year" onclick="l_year()">
+					<option value="0.5">半年</option>
+					<option value="1">一年</option>
+					<option value="3">三年</option>
+					<option value="5" >五年</option>
+				</select>
+				<br />
+				利率输入选择：
+					<input id="auto" type="radio" checked="checked" name="rate-input" value="auto" onclick="l_open()"/>
+					自动
+					<input type="radio" name="rate-input" value="no-auto" onclick="l_close()"/>
+					手动
+				<br />
+				存入利率：
+				<input type="text" id="rate" disabled="disabled" value="1.35"/>%
+				<br />
+				约定转存选择：
+					<input type="radio" checked="checked" name="turn" value="auto" />
+					不转存
+					<input type="radio" name="turn" value="no-auto" />
+					转存
+				<br />
+				<input type="button" class="button" name="buttom" value="测算" onclick="compute()"/>
+				<input class="button" type="reset" name="reset" value="重置"/>
+				<div id="line">
+					
+				</div>
+				存款利息：
+				<input id="show" type="text" name="show-rate"/>
+				<br />
+				本息合计：
+				<input type="text" id="show-sum" />
+				<br />
+			</form>
+		</div>
+		
+	</body>
+</html>

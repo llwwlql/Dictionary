@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>随机生成</title>
+		<script type="text/javascript">
+		function randomID(){
+			len=10;
+			var chars='0123456789';
+			var maxPos=chars.length;
+			var pow='';
+			for(var i=0;i<len;i++)
+				pow+=chars.charAt(Math.floor(Math.random()*maxPos));
+			return pow;
+		}
+		
+		function randomName(){
+			len=3;
+			var pow='';
+			for(var i=0;i<len;i++)
+			{
+				eval( "pow+=" +  '"\\u' + (Math.round(Math.random() * 20901) + 19968).toString(16)+'"') 
+			}
+			return pow;
+		}
+		
+		function output(len)
+		{
+			len=len || 3;
+			document.write("<h1>");
+			document.write("<pre>");
+			document.write("学号\t\t");
+			document.write("姓名\n");
+			for(var i=1;i<=len;i++)
+			{
+				document.write(randomID()+"\t");
+				document.write(randomName()+"\n");
+			}
+			document.write("</pre>");
+			document.write("</h1>");
+		}
+		output(4);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -13,14 +13,21 @@ void link(int* m, int p, int q)
 	int pID = m[p];
 	int qID = m[q];
 	for(i=0; i<N; i++)
-		m[i]=(pID==m[i]) ? qID : m[i];
+		m[i]= (m[i]==pID) ? qID : m[i];
+	/*
+	等价于：
+	
+	if(m[i]==pID)
+		m[i]=qID; 
+	把一个连通图的前驱全都改成另一个连通图的前驱 
+	*/ 
 }
 
 int main()
 {
 	int m[N];
 	int i;
-	for(i=0; i<N; i++) m[i] = i; 
+	for(i=0; i<N; i++) m[i] = i;
 	link(m,0,1);
 	link(m,1,2); 
 	link(m,3,4); 
@@ -35,4 +42,3 @@ int main()
 	printf("%d ", connected(m,9,2));
 	return 0;
 }
-

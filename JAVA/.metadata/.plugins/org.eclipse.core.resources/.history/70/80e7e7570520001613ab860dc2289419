@@ -1,0 +1,8 @@
+package PropertyEvaluate;
+
+public class MyClass {
+	
+	public void Evaluate(){
+		
+	}
+}

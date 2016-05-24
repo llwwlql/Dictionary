@@ -1,0 +1,13 @@
+package propertyevaluate;
+
+public class Test {
+
+	public static void main(String[] args) throws Exception {
+		// TODO 自动生成的方法存根
+		MyClass myc=new MyClass();
+		myc.Evaluate();
+		Person p=new Person();
+		p.print();
+	}
+
+}

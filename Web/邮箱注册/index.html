@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/注册.css" />
+		<script src="js/注册.js"></script>
+		<title>邮箱注册</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="banner">
+				<img src="img/1.png"/>
+				<ul>
+					<li><a href="http://mail.163.com/html/mail_intro/" target="_blank">了解更多</a></li>
+					<li><a href="http://help.mail.163.com/feedback.do?m=add&categoryName=%E6%B3%A8%E5%86%8C" target="_blank">反馈意见</a></li>
+				</ul>
+			</div>
+			<header class="banner-bottom">
+				<img src="img/2.png">
+			</header>
+			<div class="main">
+				<div class="left">
+					<div class="select">
+						<form>
+							<input type="button" id="word-email" value="注册字母邮箱"/>
+							<input type="button" id="phone-email" value="注册手机号邮箱" />
+						</form>
+					</div>
+					<div class="menu">
+						<form>
+							<!--邮箱地址-->
+							<span class="txt-impt">*</span>
+							<span>邮件地址:</span>
+							<input type="text" placeholder="建议使用手机号注册" id="address" onchange="item()"/>
+							<span class="txt-end">@</span>
+							<select id="status">
+								<option value="1">163.com</option>
+								<option value="2">126.com</option>
+							</select>
+							<p id="wrong-adr">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+							<br />
+							<!--密码-->
+							<span class="txt-impt">&nbsp&nbsp*</span>
+							<span>密码:</span>
+							<input type="password" id="password" onchange="passChk()"/>
+							<p id="wrong-pass">6~16个字符，区分大小写</p>
+							<br />
+							<!--确认密码-->
+							<span class="txt-impt">*</span>
+							<span>确认密码:</span>
+							<input type="password" id="re-password" onchange="repassChk()"/>
+							<p id="wrong-repass">请再次填写密码</p>
+							<br />
+							<!--验证码-->
+							<span class="txt-impt">&nbsp*</span>
+							<span>验证码:</span>
+							<input type="text" id="check" onchange="prov()"/>
+							<img id="img-check" src="img/验证码/1.jpg" align="middle" name="1"/>
+							<br />
+							<span class="font-check" id="font-check">请填写图片中的字符，全输入小写</span>
+							<span><a href="#" onclick="change(1)">看不清楚？换张图片</a></span>
+							<br/>
+							<input type="checkbox" id="agree" checked="checked"/>
+							<span class="agree-font">同意"服务条款"和"隐私权相关政策"</span>
+							<br />
+							<input type="button" id="submit" onclick="sub()"/>
+						</form>
+					</div>
+				</div>
+				<div class="right">
+					<img src="img/3.jpg"/>
+				</div>
+			</div>
+			<div class="foot">
+				<img src="img/9.png"/>
+			</div>
+		</div>
+	</body>
+</html>

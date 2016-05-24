@@ -1,0 +1,72 @@
+package cn.edu.ex.ch9.test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+
+interface Common{
+	double speed();
+}
+
+class Car implements Common{
+
+	int A,B,C;
+	
+	public Car(int a, int b, int c) {
+		super();
+		A = a;
+		B = b;
+		C = c;
+	}
+
+	@Override
+	public double speed() {
+		// TODO Auto-generated method stub
+		return A*B/C;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return A+" "+B+" "+C;
+	}
+}
+
+class Plane implements Common{
+	int A,B,C;
+	
+/*	public Plane(int a, int b, int c) {
+		super();
+		A = a;
+		B = b;
+		C = c;
+	}
+
+*/	@Override
+	public double speed() {
+		// TODO Auto-generated method stub
+		return A+B+C;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return A+" "+B+" "+C;
+	}
+}
+
+public class Vehicle {
+
+	public static void main(String[] args) throws Exception{
+		// TODO Auto-generated method stub
+		Class cls1 = Class.forName("cn.edu.ex.ch7.Car");
+
+		Constructor cons = cls1.getConstructor(new Class[]{int.class,int.class,int.class});
+		Object obj = cons.newInstance(new Object[]{3,3,3});
+		System.out.println(obj);
+		Plane plane = (Plane)Class.forName("cn.edu.ex.ch7.Plane").newInstance();
+		plane.A=4;
+		plane.B=4;
+		plane.C=4;
+		System.out.println(plane);
+		
+	}
+
+}

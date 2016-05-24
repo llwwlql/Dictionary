@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将包“ComputeTime”复制到“20142203713逯其鲁(实验10)/src”&#x0D;&#x0A;－ 原始项目：“20142203713逯其鲁(实验8)”&#x0D;&#x0A;－ 目标元素：“20142203713逯其鲁(实验10)/src”&#x0D;&#x0A;－ 原始元素：“20142203713逯其鲁(实验8)/src/ComputeTime”" description="复制包" destination="=20142203713逯其鲁\(实验10)/src" element1="/src&lt;ComputeTime" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1463916749958" version="1.0"/>
+</session>

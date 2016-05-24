@@ -10,11 +10,10 @@
 .baner div{
 	float: left;
 }
-
 .logo{
 	margin-left: 20px;
 	width: 160px;
-	height: 70px;
+	height: 50px;
 	margin-left: 50px;
 	margin-right: 20px;
 }
@@ -24,7 +23,6 @@
 .font{
 	width: 500px;
 	height: 80px;
-	/*background-color: chartreuse;*/
 	font-size: x-large;
 }
 .font p{
@@ -33,9 +31,8 @@
 	font-family: "agency fb";
 }
 .menu{
-	width: 533px;
-	height: 80px;
-	/*background-color: antiquewhite;*/
+	width: 270px;
+	height: 40px;
 }
 .menu ul{
 	float: left;
@@ -129,7 +126,6 @@
 	width: 30px;
 }
 .pos-sub{
-	margin-left: 2s0px;
 	margin-right: 20px ;
 }
 .sub{
@@ -149,4 +145,60 @@ input[type=submit]{
 	height: 25px;
 	background-color: #F0F8FF;
 	font-size: 10px;
+}
+/*登录页面*/
+
+.font-login{
+	margin: 2px 0 0 200px;
+}
+.font-login p{
+	font-size: 16px;
+}
+.menu-bottom{
+	width: 90%;
+	height: 40px;
+}
+.menu-bottom ul li{
+	float: left;
+	height: 30px;
+	list-style: none;
+	padding: 3px 22px 3px 22px;
+	border: solid 2px ;
+	border-radius: 5px;
+	background-color: bisque;
+}
+.menu-bottom ul li a,a:visited{
+	width: 180px;
+	height: 15px;
+	padding: 10px 10px 8px 10px;
+	font-size: 18px;
+	font-family: "宋体";
+	text-decoration: none;
+}
+
+#main{
+	border-top: solid 10px #FF7F50;
+	width: 100%;
+	height: 600px;
+	background-color: aqua;
+}
+#main div{
+	float: left;
+}
+#main-left{
+	width: 24%;
+	height: 100%;
+	background-color: blueviolet;
+}
+#main-right{
+	width: 76%;
+	height: 100%;
+	background-color: #FF7F50;
+}
+.setmail{
+	border-bottom: 2px solid;
+	margin-left: 14px;
+}
+#sub{
+	background-color: #00FFFF;
 }

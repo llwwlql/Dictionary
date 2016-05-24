@@ -1,0 +1,22 @@
+package ComputeTime;
+public class ComputeTime {
+	
+	public static double computetime(Common c)
+	{	
+		return 1000.0/c.speed();
+	}
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		double a,b,c;
+		double speed;
+		ComputeTime com=new ComputeTime();
+		Common c1=(Common)Class.forName(args[0]).newInstance();
+		a=Integer.parseInt(args[1]);
+		b=Integer.parseInt(args[2]);
+		c=Integer.parseInt(args[3]);
+		speed=c1.speed(a,b,c);
+		System.out.println(1000/speed);
+	}
+
+}

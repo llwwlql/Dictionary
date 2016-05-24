@@ -1,0 +1,39 @@
+*{
+	 margin: 0;
+	 padding: 0;
+}
+body{
+	margin-top: 30px;
+}
+
+.continer{
+	width: 28%;
+	height: 400px;
+	margin: auto;
+	border: solid black 2px;
+	padding: 20px 0 0 30px;
+}
+.continer h2{
+	font-size: 14px;
+	color: red;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+form *{
+	font-size: 15px;
+	margin: 7px 0 0 0;
+}
+.button{
+	margin-top: 10px;
+	margin-left: 70px;
+	border-radius: 5px;
+}
+#line{
+	width: 85%;
+	height: 10px;
+	border-bottom:  dotted 1px darkgray;
+}
+.show{
+	margin-top: 20px;
+}

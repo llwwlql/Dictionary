@@ -1,0 +1,36 @@
+package 第四章课后题;
+import java.util.*;
+public class Luhn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin=new Scanner(System.in);
+		String str=cin.nextLine();
+		char[] ch;
+		int len,count=0,temp;
+		len=str.length();
+		ch=str.toCharArray();
+		if(len>=13 && len<=16)
+		{
+			for(int i=len-1;i>=0;i--)
+			{
+				if(i%2==0)
+				{
+					temp=(ch[i]-'0')*2;
+					if(temp>=10)
+						temp-=9;
+				}
+				else
+					temp=ch[i]-'0';
+				count+=temp;
+			}
+		}
+		else
+			count=-1;
+		if(count%10==0)
+			System.out.println("成功。\n");
+		else
+			System.out.println("失败。\n");
+	}
+
+}
