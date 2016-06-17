@@ -1,0 +1,45 @@
+package com;
+import javax.swing.border.EmptyBorder;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class MyButton extends JButton{
+	private JPanel panel;
+	private JTextField textField;
+	private JTextField textField_1;
+	public MyButton(JPanel p,JTextField tf , JTextField tf1) {
+		// TODO 自动生成的构造函数存根
+		super();
+		this.panel = p;
+		this.textField = tf;
+		this.textField_1 = tf1;
+		this.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				JButton btn = (JButton) e.getComponent();
+				btn.setBorderPainted(true);
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+				JButton btn = (JButton) e.getComponent();
+				btn.setBorderPainted(false);
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				// TODO Auto-generated method stub
+				String btnName =((JButton)e.getSource()).getText();
+				if ("File".equals(btnName.trim())) {
+					//鼠标点击事件
+					tf.setText("hello");
+				}
+			}
+		});
+	}
+}

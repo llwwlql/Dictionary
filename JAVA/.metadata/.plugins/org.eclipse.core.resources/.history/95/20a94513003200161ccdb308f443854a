@@ -1,0 +1,27 @@
+package com;
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+
+public class JPanel_3 extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_3() {
+		super();
+		setBackground(Color.WHITE);
+		setBounds(157, 0, 627, 561);
+		setBackground(Color.gray);
+		setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(158, 63, 281, 53);
+		add(lblNewLabel);
+	}
+}

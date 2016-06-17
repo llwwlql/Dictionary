@@ -1,0 +1,23 @@
+package com;
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class JPanel_3 extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_3() {
+		super();
+		setBackground(Color.WHITE);
+		setBounds(157, 0, 627, 561);
+		setLayout(null);
+		setBackground(Color.black);
+	}
+
+}

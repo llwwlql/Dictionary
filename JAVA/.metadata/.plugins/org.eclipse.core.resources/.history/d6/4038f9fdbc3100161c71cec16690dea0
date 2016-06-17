@@ -1,0 +1,35 @@
+package com;
+
+import java.awt.Color;
+
+import javax.swing.JTextField;
+
+public class DropdownText extends JTextField{
+	private DropText[] dt;
+	public DropText[] getDt() {
+		return dt;
+	}
+	public void setDt(DropText[] dt) {
+		this.dt = dt;
+	}
+	public DropdownText() {
+		// TODO 自动生成的构造函数存根
+		super();
+		setBackground(Color.WHITE);
+		setBounds(96, 62, 439, 200);
+		setLayout(null);
+		setEditable(false);
+		DropText[] dropword = new DropText[5];
+		
+		for(int i=0;i<=4;i++)
+		{
+			dropword[i] = new DropText();
+			int y=i*40;
+			dropword[i].setBounds(0,y,439,40);
+			dropword[i].setEditable(false);
+			dropword[i].setText("111");
+			add(dropword[i]);
+		}
+
+	}
+}

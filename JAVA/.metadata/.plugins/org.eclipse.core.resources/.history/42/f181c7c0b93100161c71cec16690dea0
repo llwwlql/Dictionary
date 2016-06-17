@@ -1,0 +1,37 @@
+package com;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
+public class DropText extends JTextField{
+	private JTextField fText;
+	public JTextField getfText() {
+		return fText;
+	}
+	public void setfText(JTextField fText) {
+		this.fText = fText;
+	}
+	public DropText(JTextField fText){
+		super();
+		this.fText = fText;
+		this.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				fText.setVisible(false);
+			}
+//			@Override
+//			public void mouseEntered(MouseEvent e) {
+//				JTextField jtf = (JTextField) e.getComponent();
+//				jtf.setOpaque(false);
+//			}
+//			@Override
+//			public void mouseExited(MouseEvent e) {
+//				JTextField jtf = (JTextField) e.getComponent();
+//				jtf.setOpaque(true);
+//			}
+		});
+	}
+}

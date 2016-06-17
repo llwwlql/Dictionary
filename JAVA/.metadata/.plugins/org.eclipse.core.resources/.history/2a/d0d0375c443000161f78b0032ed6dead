@@ -1,0 +1,14 @@
+package com;
+
+import javax.swing.JPanel;
+
+public class JPanel_2 extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_2() {
+
+	}
+
+}

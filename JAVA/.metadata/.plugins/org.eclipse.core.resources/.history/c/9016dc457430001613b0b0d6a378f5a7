@@ -1,0 +1,72 @@
+package com;
+
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.text.AbstractDocument.Content;
+
+public class AddWordPanel extends JPanel {
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JPanel addwordpanel;
+	private JPanel fpanel;
+	public JPanel getFpanel() {
+		return fpanel;
+	}
+	public void setFpanel(JPanel fpanel) {
+		this.fpanel = fpanel;
+	}
+	public JLabel getLblNewLabel() {
+		return lblNewLabel;
+	}
+	public void setLblNewLabel(JLabel lblNewLabel) {
+		this.lblNewLabel = lblNewLabel;
+	}
+	public JLabel getLblNewLabel_1() {
+		return lblNewLabel_1;
+	}
+	public void setLblNewLabel_1(JLabel lblNewLabel_1) {
+		this.lblNewLabel_1 = lblNewLabel_1;
+	}
+	
+	/**
+	 * Create the panel.
+	 */
+	public AddWordPanel(int x,int y,int width,int high) {
+		super();
+		addwordpanel=this;
+		setBounds(x, y, width, high);
+		setLayout(null);
+		lblNewLabel = new JLabel("apple");
+		lblNewLabel.setFont(new Font("宋体", Font.PLAIN, 35));
+		lblNewLabel.setBounds(39, 12, 133, 41);
+		add(lblNewLabel);
+		
+		MyButton btnNewButton = new MyButton();
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//删除单词
+				JOptionPane.showMessageDialog(null, "", "去顶要删除该单词吗", JOptionPane.OK_OPTION);
+				fpanel.remove(addwordpanel);
+				fpanel.updateUI();
+			}
+		});
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\llwwlql\\Desktop\\11$O%1NH[HC6M5R`IOPT0{U.png"));
+		btnNewButton.setBounds(502, 33, 18, 18);
+		add(btnNewButton);
+		
+		
+		lblNewLabel_1 = new JLabel("\u82F9\u679C\uFF0C\u82F9\u679C\u6811");
+		lblNewLabel_1.setFont(new Font("宋体", Font.PLAIN, 29));
+		lblNewLabel_1.setBounds(39, 63, 458, 52);
+		add(lblNewLabel_1);
+	}
+}

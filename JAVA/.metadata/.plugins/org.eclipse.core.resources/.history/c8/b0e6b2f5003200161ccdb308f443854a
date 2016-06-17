@@ -1,0 +1,38 @@
+package com;
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JLabel;
+
+public class JPanel_3 extends JPanel {
+	private JPanel panel;
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_3() {
+		super();
+		setBounds(157, 0, 627, 561);
+		setBackground(Color.gray);
+		setLayout(null);
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBounds(10, 77, 607, 474);
+		panel.setBackground(Color.WHITE);
+		
+		JScrollPane scrollPane = new JScrollPane(panel);
+		scrollPane.setBounds(10, 77, 607, 474);
+		scrollPane.setBackground(Color.WHITE);
+		panel.setPreferredSize(new Dimension(scrollPane.getWidth() - 50, scrollPane.getHeight()*4));
+		add(scrollPane);
+		updateUI();
+		setVisible(false);
+		panel.revalidate(); //告诉其他部件,我的宽高变了
+	}
+}

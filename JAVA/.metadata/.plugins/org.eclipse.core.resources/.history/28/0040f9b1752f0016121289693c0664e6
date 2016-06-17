@@ -1,0 +1,24 @@
+package com;
+import javax.swing.border.EmptyBorder;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JButton;
+
+public class MyButton extends JButton{
+	public MyButton() {
+		// TODO 自动生成的构造函数存根
+		super();
+		this.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				JButton btn = (JButton) e.getComponent();
+				btn.setBorderPainted(true);
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+				JButton btn = (JButton) e.getComponent();
+				btn.setBorderPainted(false);
+			}
+		});
+	}
+}

@@ -1,0 +1,30 @@
+package com;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class JPanel_2 extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_2() {
+		super();
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GREEN);
+		panel_1.setBounds(157, 0, 627, 561);
+		panel_1.setLayout(null);
+		
+		JLabel label = new JLabel("\u5355\u8BCD\u672C");
+		label.setBounds(0, 0, 214, 67);
+		label.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 50));
+		panel_1.add(label);
+		
+		AddWordPanel Panel = new AddWordPanel(21, 74, 585, 143);
+		panel_1.add(Panel);
+	}
+
+}

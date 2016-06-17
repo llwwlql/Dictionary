@@ -1,0 +1,109 @@
+package com;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.ScrollPaneConstants;
+
+import java.awt.Font;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+
+import javax.swing.JList;
+import javax.swing.JTable;
+import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Panel_2 extends JFrame {
+
+	private JPanel contentPane;
+	private JTable table;
+	private JTable table_1;
+	private JTable table_2;
+	private JTable table_3;
+	private JTable table_4;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Panel_2 frame = new Panel_2();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Panel_2() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 800, 600);
+		setLocationRelativeTo(null);	//æ”÷–œ‘ æ
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		contentPane.setLayout(null);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GREEN);
+		panel_1.setBounds(157, 0, 627, 561);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel label = new JLabel("\u5355\u8BCD\u672C");
+		label.setBounds(0, 0, 214, 67);
+		label.setFont(new Font("Œ¢»Ì—≈∫⁄", Font.PLAIN, 50));
+		panel_1.add(label);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 77, 607, 474);
+		panel_1.add(panel);
+		panel.setLayout(null);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBounds(31, 35, 546, 137);
+		panel.add(panel_2);
+		
+		AddWordPanel Panel = new AddWordPanel(21, 74, 585, 143);
+//		MyButton btnNewButton = new MyButton();
+//		
+//		btnNewButton.setIcon(new ImageIcon("C:\\Users\\llwwlql\\Desktop\\11$O%1NH[HC6M5R`IOPT0{U.png"));
+//		btnNewButton.setBounds(502, 33, 18, 18);
+//		panel_1.add(Panel);
+//		
+//		JPanel thumbnailPane = new JPanel(new GridLayout(100, 1));
+//        for (int i = 0; i < 100; i++) {
+//            JLabel jlb = new JLabel("tong" + i);
+//            thumbnailPane.add(jlb);
+//        }
+//        JScrollPane scrollPane = new JScrollPane(
+//                ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+//                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+//        scrollPane.setViewportView(thumbnailPane);
+//        thumbnailPane.setPreferredSize(new Dimension(180, 2000));
+//        thumbnailPane.revalidate();
+//        // horizontalScandocDRPane.add(scrollPane);
+//        this.add(scrollPane);
+		
+	}
+}

@@ -1,0 +1,64 @@
+package com;
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+
+public class JPanel_3 extends JPanel {
+	private JPanel panel;
+	private JTextField textField;
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_3() {
+		super();
+		setBounds(157, 0, 627, 561);
+		setBackground(Color.gray);
+		setLayout(null);
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBounds(0, 0, 627, 561);
+		panel.setBackground(Color.WHITE);
+		
+		JScrollPane scrollPane = new JScrollPane(panel);
+		scrollPane.setBounds(0, 0, 627, 561);
+		scrollPane.setBackground(Color.WHITE);
+		panel.setPreferredSize(new Dimension(scrollPane.getWidth() - 50, scrollPane.getHeight()*7));
+		
+		JLabel lblNewLabel = new JLabel("\u5982\u4F55\u7528\u82F1\u8BED\u548C\u7403\u8FF7\u6109\u5FEB\u5730\u4EA4\u8C08\uFF1F");
+		lblNewLabel.setFont(new Font("黑体", Font.PLAIN, 23));
+		lblNewLabel.setBounds(128, 49, 322, 45);
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\llwwlql\\Desktop\\8_127B136)@(73)QTK5TVD8.png"));
+		lblNewLabel_1.setBounds(90, 135, 401, 251);
+		panel.add(lblNewLabel_1);
+		
+		textField = new JTextField();
+		textField.setText("2016-06-14 11:47:46     \u6765\u6E90\uFF1A\u4E2D\u56FD\u65E5\u62A5\u82F1\u8BED\u70B9\u6D25     \u70B9\u51FB\uFF1A988\u6B21");
+		textField.setBounds(99, 104, 379, 21);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+//		JTextArea txtrfootballFans = new JTextArea();
+//		txtrfootballFans.setFont(new Font("Monospaced", Font.PLAIN, 17));
+//		txtrfootballFans.setBounds(10, 396, 588, 1838);
+//		panel.add(txtrfootballFans);
+//		add(scrollPane);
+//		updateUI();
+//		setVisible(false);
+		panel.revalidate(); //告诉其他部件,我的宽高变了
+	}
+}

@@ -1,0 +1,51 @@
+package com;
+import javax.swing.border.Border;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.EtchedBorder;
+
+import java.awt.Component;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class MyButton extends JButton{
+	
+	private JPanel contentPane;
+	
+	public MyButton(JPanel contentPane){
+		// TODO 自动生成的构造函数存根
+		super();
+		this.contentPane = contentPane;
+		this.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				JButton btn = (JButton) e.getComponent();
+				btn.setBorderPainted(true);
+			}
+//			@Override
+//			public void mouseExited(MouseEvent e) {
+//				JButton btn = (JButton) e.getComponent();
+//				btn.setBorderPainted(false);
+//			}
+//			@Override
+//			public void mousePressed(MouseEvent e) {
+//				// TODO Auto-generated method stub
+//				JButton btn = (JButton) e.getComponent();
+//				Border etchedBorder = new EtchedBorder(EtchedBorder.RAISED);// 设置边框凸显
+//				btn.setBorder(etchedBorder);
+//			}
+//			@Override
+//			public void mouseReleased(MouseEvent e) {
+//				// TODO Auto-generated method stub
+//				JButton btn = (JButton) e.getComponent();
+//				Border etchedBorder = new EtchedBorder(EtchedBorder.LOWERED);// 设置边框凹显
+//				btn.setBorder(etchedBorder);
+//			}
+		});
+	}
+}

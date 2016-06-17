@@ -1,0 +1,27 @@
+package com;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class JPanel_2 extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_2(JPanel contentJPanel) {
+		super();
+		setBackground(Color.GREEN);
+		setBounds(157, 0, 627, 561);
+		setLayout(null);	
+		JLabel label = new JLabel("\u5355\u8BCD\u672C");
+		label.setBounds(0, 0, 214, 67);
+		label.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 50));
+		this.add(label);
+	}
+}

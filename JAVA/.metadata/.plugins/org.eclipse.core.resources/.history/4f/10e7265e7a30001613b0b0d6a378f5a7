@@ -1,0 +1,19 @@
+package com;
+
+import java.awt.EventQueue;
+
+public class Text {
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					DicGUI frame = new DicGUI();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+}

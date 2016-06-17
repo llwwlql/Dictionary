@@ -1,0 +1,126 @@
+package com;
+
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.EventQueue;
+import java.awt.Point;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+
+import java.awt.Color;
+
+import javax.swing.JTextArea;
+import javax.swing.JTabbedPane;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.ImageIcon;
+
+public class DicGUI extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					DicGUI frame = new DicGUI();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public DicGUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 800, 600);
+		setLocationRelativeTo(null);	//居中显示
+		
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		contentPane.setLayout(null);
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.MAGENTA);
+		panel.setBounds(0, 0, 169, 561);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JButton button_1 = new JButton("词典");
+		button_1.setBounds(10, 141, 139, 47);
+		panel.add(button_1);
+		
+		JButton button_2 = new JButton("单词本");
+		button_2.setBounds(10, 205, 139, 47);
+		panel.add(button_2);
+		
+		JButton button_3 = new JButton("每日一文");
+		button_3.setBounds(10, 268, 139, 47);
+		panel.add(button_3);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GREEN);
+		panel_1.setBounds(169, 0, 615, 561);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("宋体", Font.PLAIN, 18));
+		textField.setText("\u8BF7\u8F93\u5165\u5355\u8BCD");
+		textField.setBounds(96, 27, 439, 40);
+		panel_1.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(10, 81, 595, 460);
+		panel_1.add(textField_1);
+		textField_1.setColumns(10);
+		
+		JButton btnNewButton = new JButton("");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\llwwlql\\Desktop\\B)_Y1Z0GUUGNV%]J03VFSN9.png"));
+		btnNewButton.setBounds(533, 27, 72, 40);
+		panel_1.add(btnNewButton);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\llwwlql\\Desktop\\2L1H8K67O$A$QCAU9P`B8$F.png"));
+		lblNewLabel.setBounds(24, 27, 72, 40);
+		panel_1.add(lblNewLabel);
+		//panel_1.setVisible(false);	//隐藏Panel
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.BLACK);
+		panel_2.setBounds(169, 0, 615, 561);
+		contentPane.add(panel_2);
+		panel_2.setLayout(null);
+		panel_2.setVisible(false);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setBackground(Color.BLUE);
+		panel_3.setBounds(169, 0, 615, 561);
+		contentPane.add(panel_3);
+		panel_3.setLayout(null);
+		panel_3.setVisible(false);
+		
+		Component com = contentPane.getComponent(0);
+		
+		Component comButton = ((Container) com).getComponent(0);
+		
+		comButton.setForeground(Color.BLUE);
+	}
+}

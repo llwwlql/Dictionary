@@ -1,0 +1,11 @@
+package com;
+
+import javax.swing.JButton;
+
+public class MyButton extends JButton{
+	private int radius=10;
+	public MyButton() {
+		// TODO 自动生成的构造函数存根
+		super();
+	}
+}

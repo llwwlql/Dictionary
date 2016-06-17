@@ -1,0 +1,68 @@
+package com;
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+
+public class JPanel_3 extends JPanel {
+	private JPanel panel;
+	private JTextField textField;
+	/**
+	 * Create the panel.
+	 */
+	public JPanel_3() {
+		super();
+		setBounds(157, 0, 627, 561);
+		setBackground(Color.gray);
+		setLayout(null);
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBounds(0, 0, 627, 561);
+		panel.setBackground(Color.WHITE);
+		
+		JScrollPane scrollPane = new JScrollPane(panel);
+		scrollPane.setBounds(0, 0, 627, 561);
+		scrollPane.setBackground(Color.WHITE);
+		panel.setPreferredSize(new Dimension(scrollPane.getWidth() - 50, scrollPane.getHeight()*7));
+		
+		JLabel lblNewLabel = new JLabel("\u5982\u4F55\u7528\u82F1\u8BED\u548C\u7403\u8FF7\u6109\u5FEB\u5730\u4EA4\u8C08\uFF1F");
+		lblNewLabel.setFont(new Font("黑体", Font.PLAIN, 23));
+		lblNewLabel.setBounds(128, 49, 322, 45);
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\llwwlql\\Desktop\\8_127B136)@(73)QTK5TVD8.png"));
+		lblNewLabel_1.setBounds(94, 127, 401, 251);
+		panel.add(lblNewLabel_1);
+		
+		textField = new JTextField();
+		textField.setForeground(Color.LIGHT_GRAY);
+		textField.setText("2016-06-14 11:47:46     \u6765\u6E90\uFF1A\u4E2D\u56FD\u65E5\u62A5\u82F1\u8BED\u70B9\u6D25     \u70B9\u51FB\uFF1A988\u6B21");
+		textField.setBounds(107, 91, 379, 21);
+		textField.setBorder(null);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+		JTextArea txtrfootballFans = new JTextArea();
+		txtrfootballFans.setFont(new Font("Meiryo UI", Font.PLAIN, 14));
+		txtrfootballFans.setText("\u5BFC\u8BFB\uFF1A\u5317\u4EAC\u65F6\u95F42016\u5E746\u670811\u65E503:00\u8D77\uFF0C\u4F60\u8EAB\u8FB9\u662F\u4E0D\u662F\u5C31\u6709\u90A3\u4E48\u4E00\u7FA4\u4EBA\uFF0C\u4ED6\u4EEC\u56E4\u79EF\u98DF\u7CAE\uFF0C\u663C\u4F0F\u591C\u51FA\uFF0C\u4ED6\u4EEC\u65F6\u800C\u6B22\u547C\uFF0C\u65F6\u800C\u53F9\u606F\u2026\u2026\u4ED6\u4EEC\u6B64\u65F6\u90FD\u6709\u4E00\u4E2A\u540D\u5B57\uFF1A\u7403\u8FF7football fans~\r\n\r\n\u56E0\u4E3A\uFF0C\u6B27\u6D32\u676F\u6765\u4E86\uFF01\r\n\r\n\u6B27\u6D32\u676F\u7531\u6B27\u6D32\u8DB3\u7403\u534F\u4F1A\u8054\u76DF\uFF08Union of European Football Associations\uFF0CUEFA\uFF09\u7BA1\u7406\uFF0C2016\u5E74\u6CD5\u56FD\u6B27\u6D32\u676F\uFF082016 UEFA European Championship\uFF0CUEFA Euro 2016\uFF09\u6B63\u5728\u706B\u70ED\u8FDB\u884C\u3002\r\n\r\n\u4E0D\u7BA1\u4F60\u662F\u4E0D\u662F\u7403\u8FF7\uFF0C\u4F60\u90FD\u53EF\u4EE5Get\u4E0B\u9762\u8FD9\u4E9B\u7403\u8D5B\u76F8\u5173\u7684\u6709\u8DA3\u8868\u8FBE\uFF0C\u6700\u8D77\u7801\u4E0D\u81F3\u4E8E\u5728\u9047\u5230\u7403\u8FF7\u7684\u65F6\u5019\u6839\u672C\u65E0\u6CD5\u6109\u5FEB\u5730\u4EA4\uFF08tu\uFF09\u8C08\uFF08cao\uFF09\u561B~\r\n\r\n1 Lifting the silverware \u593A\u51A0\r\n\r\n>>>> silverware ['s\u026Alv\u0259we\u0259] \u94F6\u5668\uFF0C\u94F6\u8D28\u9910\u5177\r\n\r\nlift the silverware\u8FD9\u4E2A\u642D\u914D\u4E2D\uFF0C\u6CE8\u610Fsilverware\u6307\u7684\u662F\u7403\u8D5B\u7684\u51A0\u519B\u5956\u676F\uFF0C\u53EF\u4E0D\u662F\u4EC0\u4E48\u94F6\u5956\u54E6\u3002\r\n\r\nThis is literally what happens when your team wins a major trophy. Everyone goes insane, and the winning team gets to \u201Clift the silverware\u201D.\r\n\r\n\u4F60\u7684\u7403\u961F\u8D62\u5F97\u5927\u5956\u7684\u65F6\u5019\uFF0C\u5C31\u662F\u8FD9\u4E48\u55E8~\u6BCF\u4E2A\u4EBA\u6FC0\u52A8\u75AF\u4E86\uFF0C\u8D62\u7684\u961F\u4F0D\u5C31\u80FD lift the silverware\uFF01\r\n\r\n2 Heads for an early bath\u201C\u65E9\u70B9\u6D17\u5934\u53BB\u201D\uFF1A\u7EA2\u724C\u7F5A\u4E0B\r\n\r\nThis means you got ejected from the game. Might as well go clean up since there's nothing better to do, right\uFF1F\r\n\r\n\u8FD9\u610F\u5473\u7740\u4F60\u88AB\u51FA\u5C40\u4E86\u3002\u4E0D\u59A8\u53BB\u6D17\u6D17\u597D\u4E86\u2026\u2026\u53CD\u6B63\u53C8\u6CA1\u522B\u7684\u4E8B\u513F\u597D\u505A\u4E86\uFF0C\u5BF9\u5427\uFF1F\uFF08\u55EF\u2026\u2026\u4E2D\u6587\u7248\u8868\u8FBE\u6216\u8BB8\u662F\u201C\u6D17\u6D17\u7761\u5427\u201D\uFF1F\uFF09\r\n\r\n3 Hit the woodwork \u51FB\u4E2D\u7403\u95E8\r\n\r\n>>>> woodwork \u6728\u5236\u54C1\uFF0C\u5728\u4FDA\u8BED\u4E2D\u4E5F\u53EF\u6307\u201C\uFF08\u8DB3\u7403\u7684\uFF09\u7403\u95E8\u6846\u201D\r\n\r\nThis refers to a shot that ends up hitting the goalposts. Hit the woodwork \u6307\u7684\u662F\u8FDB\u7403\u51FB\u4E2D\u4E86\u95E8\u6846\u3002\r\n\r\n\uFF08\u8FDB\u4E0D\u8FDB\u7403\u5C31\u4E0D\u4E00\u5B9A\u5566~\u6240\u4EE5hit the woodwork\u4E4B\u65F6\uFF0C\u6B63\u662F\u5173\u952E\u65F6\u523B\u6240\u5728\u3002\uFF09\r\n\r\n4 Get stuck in \u594B\u529B\u62FC\u62A2\r\n\r\nIf you've ever played defense, you know that you have to go in hard and take no prisoners if you want to do your job well.\r\n\r\n\u5982\u679C\u4F60\u8E22\u8FC7\u9632\u5B88\uFF0C\u4F60\u80AF\u5B9A\u77E5\u9053\uFF0C\u5982\u679C\u60F3\u8981\u5E72\u5F97\u6F02\u4EAE\uFF0C\u4F60\u4E0D\u5F97\u4E0D\u62FC\u5C3D\u5168\u529B\uFF0C\u7528\u5C3D\u4E00\u5207\u624B\u6BB5\u3002\r\n\r\n5 Howler \u5B88\u95E8\u5458\u7684\u4F4E\u7EA7\u9519\u8BEF\r\n\r\nAs admirable as every goalkeeper is for risking life and limb to protect the goal, sometimes they really screw things up without any good excuse.\r\n\r\n\u867D\u7136\u6BCF\u4E2A\u5B88\u95E8\u5458\u90FD\u662F\u62FC\u4E0A\u6027\u547D\u5B88\u536B\u7403\u95E8\uFF0C\u503C\u5F97\u5C0A\u91CD\uFF0C\u4F46\u6709\u7684\u65F6\u5019\u4ED6\u4EEC\u771F\u7684\u662F\u628A\u4E8B\u60C5\u641E\u7838\u4E86\u3002\r\n\r\n>>>> howler ['haul\u0259] \u4F4E\u7EA7\u9519\u8BEF\r\n\r\n>>>> risk life and limb \u62FC\u4E0A\u6027\u547D\r\n\r\n6 The Talisman \u201C\u62A4\u8EAB\u7B26\u201D\u7403\u661F\r\n\r\nYou'll hear this a lot when a team has a star player, their \"talisman\", who they pretty much rely on to win games. Without the \"talisman\", winning becomes a lot more difficult.\r\n\r\n\u4F60\u7ECF\u5E38\u542C\u5230\u6709\u4EBA\u8FD9\u6837\u53EB\u4E00\u4E2A\u7403\u961F\u7684\u660E\u661F\u7403\u5458\uFF1A\u201C\u62A4\u8EAB\u7B26\u201D\uFF0C\u5C31\u662F\u4ED6\u4EEC\u8D56\u4EE5\u8D62\u5F97\u6BD4\u8D5B\u7684\u4EBA\u3002\u6CA1\u4E86\u201C\u62A4\u8EAB\u7B26\u201D\uFF0C\u6253\u8D62\u6BD4\u8D5B\u5C31\u96BE\u591A\u4E86\u3002\r\n\r\n>>>> talisman ['t\u00E6lizm\u0259n] \u62A4\u8EAB\u7B26\uFF0C\u6CD5\u5B9D\uFF0C\u6B64\u5904");
+		txtrfootballFans.setBounds(28, 396, 542, 2138);
+		panel.add(txtrfootballFans);
+		
+		add(scrollPane);
+		updateUI();
+		setVisible(false);
+		panel.revalidate(); //告诉其他部件,我的宽高变了
+	}
+}

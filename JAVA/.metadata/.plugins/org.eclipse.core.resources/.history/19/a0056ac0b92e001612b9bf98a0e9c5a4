@@ -1,0 +1,80 @@
+package com.ldu.edu;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JSplitPane;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class Gui extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Gui frame = new Gui();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Gui() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 600, 500);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 0, 149, 461);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JButton btnNewButton = new JButton("\u8BCD\u5178");
+		btnNewButton.setBounds(20, 110, 129, 35);
+		panel.add(btnNewButton);
+		
+		JButton button = new JButton("\u5355\u8BCD\u672C");
+		button.setBounds(20, 155, 129, 35);
+		panel.add(button);
+		
+		JButton button_1 = new JButton("New button");
+		button_1.setBounds(20, 200, 129, 35);
+		panel.add(button_1);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(148, 0, 436, 461);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		textField = new JTextField();
+		textField.setText("\u8BF7\u8F93\u5165\u8981\u67E5\u627E\u7684\u5355\u8BCD");
+		textField.setBounds(98, 30, 328, 34);
+		panel_1.add(textField);
+		textField.setColumns(40);
+		
+		JLabel lblNewLabel = new JLabel("≤È’“");
+		lblNewLabel.setFont(new Font("ÀŒÃÂ", Font.PLAIN, 14));
+		lblNewLabel.setBounds(10, 29, 78, 34);
+		panel_1.add(lblNewLabel);
+	}
+}

@@ -1,0 +1,23 @@
+package com;
+
+public class Word {
+	private String english;
+	public String getEnglish() {
+		return english;
+	}
+	public void setEnglish(String english) {
+		this.english = english;
+	}
+	public String getChinese() {
+		return Chinese;
+	}
+	public void setChinese(String chinese) {
+		Chinese = chinese;
+	}
+	private String Chinese;
+	public Word(String eg,String ch)
+	{
+		this.english = eg;
+		this.Chinese = ch;
+	}
+}
